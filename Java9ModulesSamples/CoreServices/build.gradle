@@ -1,0 +1,8 @@
+plugins {
+    id 'java-library'
+}
+
+targetCompatibility = '1.9'
+sourceCompatibility = '1.9'
+
+ext.moduleName = 'service.core'

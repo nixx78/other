@@ -1,0 +1,12 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    api project(':CoreServices')
+}
+
+targetCompatibility = '1.9'
+sourceCompatibility = '1.9'
+
+ext.moduleName = 'service.core.clientA'
