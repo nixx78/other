@@ -1,6 +1,0 @@
-rootProject.name = 'Java9ModulesSamples'
-
-include ':CoreServices'
-include ':CoreServiceClientA' 
-include ':CoreServiceClientB' 
-include ':Client'
