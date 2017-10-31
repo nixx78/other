@@ -1,7 +1,3 @@
 line1
-<<<<<<< HEAD
-line2_Local
+line2_Local_Master
 line3_Added
-=======
-line2_Master
->>>>>>> 8052938e9072228178ffeed8be23a9665d2cba57
