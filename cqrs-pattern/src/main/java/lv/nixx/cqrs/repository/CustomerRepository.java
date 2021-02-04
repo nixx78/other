@@ -1,5 +1,6 @@
 package lv.nixx.cqrs.repository;
 
+import lv.nixx.cqrs.model.Account;
 import lv.nixx.cqrs.model.Customer;
 
 import java.util.*;
@@ -18,6 +19,14 @@ public class CustomerRepository {
         }
 
         return  repo.computeIfAbsent(key, customer::setId);
+    }
+
+    public Customer update(long id, String name, Collection<Account> account) {
+        return repo.computeIfPresent(id, (k, v) -> {
+            v.setName(name);
+            v.setAccounts(account);
+            return v;
+        });
     }
 
 }

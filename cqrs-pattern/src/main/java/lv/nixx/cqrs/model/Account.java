@@ -11,5 +11,6 @@ public class Account {
     private long id;
     private String number;
     private String name;
+    private AccountType type;
     private Collection<Transaction> txns;
 }
