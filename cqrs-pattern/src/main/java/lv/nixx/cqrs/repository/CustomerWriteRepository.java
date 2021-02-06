@@ -5,13 +5,16 @@ import lv.nixx.cqrs.model.Customer;
 
 import java.util.*;
 
-public class CustomerRepository {
+public class CustomerWriteRepository {
 
     // TODO https://www.baeldung.com/cqrs-event-sourcing-java
 
-    private Map<Long, Customer> repo = new TreeMap<>();
+    void removeAll() {
+        DataStorage.data().clear();
+    }
 
     public Customer save(Customer customer) {
+        final Map<Long, Customer> repo = DataStorage.data();
 
         long key = 1L;
         if (!repo.isEmpty()) {
@@ -22,7 +25,7 @@ public class CustomerRepository {
     }
 
     public Customer update(long id, String name, Collection<Account> account) {
-        return repo.computeIfPresent(id, (k, v) -> {
+        return DataStorage.data().computeIfPresent(id, (k, v) -> {
             v.setName(name);
             v.setAccounts(account);
             return v;

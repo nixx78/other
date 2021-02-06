@@ -1,5 +1,7 @@
-package lv.nixx.cqrs.command;
+package lv.nixx.cqrs.handler;
 
+import lv.nixx.cqrs.command.CustomerCreateCommand;
+import lv.nixx.cqrs.command.CustomerUpdateCommand;
 import lv.nixx.cqrs.model.Customer;
 import lv.nixx.cqrs.repository.CustomerWriteRepository;
 
