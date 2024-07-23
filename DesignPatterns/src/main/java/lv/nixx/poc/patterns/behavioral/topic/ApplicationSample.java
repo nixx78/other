@@ -1,6 +1,8 @@
-package lv.nixx.poc.topic;
+package lv.nixx.poc.patterns.behavioral.topic;
 
-import lv.nixx.poc.topic.dto.*;
+import lv.nixx.poc.patterns.behavioral.topic.dto.UIMessageOne;
+import lv.nixx.poc.patterns.behavioral.topic.dto.UIMessageThree;
+import lv.nixx.poc.patterns.behavioral.topic.dto.UIMessageTwo;
 
 public class ApplicationSample {
 	

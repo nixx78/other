@@ -1,6 +1,7 @@
-package lv.nixx.poc.topic;
+package lv.nixx.poc.patterns.behavioral.topic;
 
-import lv.nixx.poc.topic.dto.UIMessage;
+
+import lv.nixx.poc.patterns.behavioral.topic.dto.UIMessage;
 
 public interface Subscriber<T extends UIMessage> {
 	

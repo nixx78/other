@@ -1,13 +1,12 @@
 package lv.nixx.poc.patterns.behavioral.Command;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public class TurnOnLightCommand implements Command {
-	private Light theLight;
+    private final Light theLight;
 
-	public TurnOnLightCommand(Light light) {
-		this.theLight = light;
-	}
-
-	public void execute() {
-		theLight.turnOn();
-	}
+    public void execute() {
+        theLight.turnOn();
+    }
 }

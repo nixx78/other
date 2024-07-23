@@ -1,8 +1,8 @@
-package lv.nixx.poc.topic.service;
+package lv.nixx.poc.patterns.behavioral.topic.service;
 
-import lv.nixx.poc.topic.MessageWrapper;
-import lv.nixx.poc.topic.Subscriber;
-import lv.nixx.poc.topic.dto.UIMessageThree;
+import lv.nixx.poc.patterns.behavioral.topic.MessageWrapper;
+import lv.nixx.poc.patterns.behavioral.topic.Subscriber;
+import lv.nixx.poc.patterns.behavioral.topic.dto.UIMessageThree;
 
 public class ServiceThree implements Subscriber<UIMessageThree> {
 

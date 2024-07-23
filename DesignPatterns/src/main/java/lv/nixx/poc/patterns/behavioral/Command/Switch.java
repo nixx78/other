@@ -1,21 +1,19 @@
 package lv.nixx.poc.patterns.behavioral.Command;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public class Switch {
-	
-	private Command flipUpCommand;
-	private Command flipDownCommand;
 
-	public Switch(Command flipUpCommand, Command flipDownCommand) {
-		this.flipUpCommand = flipUpCommand;
-		this.flipDownCommand = flipDownCommand;
-	}
+    private final Command flipUpCommand;
+    private final Command flipDownCommand;
 
-	public void flipUp() {
-		flipUpCommand.execute();
-	}
+    public void flipUp() {
+        flipUpCommand.execute();
+    }
 
-	public void flipDown() {
-		flipDownCommand.execute();
-	}
-	
+    public void flipDown() {
+        flipDownCommand.execute();
+    }
+
 }

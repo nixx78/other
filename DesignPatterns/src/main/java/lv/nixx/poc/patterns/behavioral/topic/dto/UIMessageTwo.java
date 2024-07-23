@@ -1,4 +1,4 @@
-package lv.nixx.poc.topic.dto;
+package lv.nixx.poc.patterns.behavioral.topic.dto;
 
 public class UIMessageTwo implements UIMessage {
 	

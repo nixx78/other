@@ -1,10 +1,15 @@
-package lv.nixx.poc.topic;
+package lv.nixx.poc.patterns.behavioral.topic;
+
+import lv.nixx.poc.patterns.behavioral.topic.dto.UIMessage;
+import lv.nixx.poc.patterns.behavioral.topic.dto.UIMessageOne;
+import lv.nixx.poc.patterns.behavioral.topic.dto.UIMessageThree;
+import lv.nixx.poc.patterns.behavioral.topic.dto.UIMessageTwo;
+import lv.nixx.poc.patterns.behavioral.topic.service.ServiceOne;
+import lv.nixx.poc.patterns.behavioral.topic.service.ServiceThree;
+import lv.nixx.poc.patterns.behavioral.topic.service.ServiceTwo;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import lv.nixx.poc.topic.dto.*;
-import lv.nixx.poc.topic.service.*;
 
 public class NotificationManager {
 	

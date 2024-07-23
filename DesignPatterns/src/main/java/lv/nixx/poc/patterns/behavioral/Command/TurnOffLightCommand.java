@@ -1,11 +1,11 @@
 package lv.nixx.poc.patterns.behavioral.Command;
 
-public class TurnOffLightCommand implements Command {
-	private Light theLight;
+import lombok.RequiredArgsConstructor;
 
-	public TurnOffLightCommand(Light light) {
-		this.theLight = light;
-	}
+@RequiredArgsConstructor
+public class TurnOffLightCommand implements Command {
+
+	private final Light theLight;
 
 	public void execute() {
 		theLight.turnOff();
