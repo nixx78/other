@@ -1,19 +1,20 @@
 package lv.nixx.poc.patterns.structural.Decorator;
 
+import lv.nixx.poc.patterns.structural.Decorator.existing.FeeCalculator;
+
 import java.math.BigDecimal;
 
-public class ExtraFeeCalculator implements FeeCalculator {
-	
-	private FeeCalculator feeCalculator; 
-	
-	public ExtraFeeCalculator(FeeCalculator feeCalculator) {
-		this.feeCalculator = feeCalculator;
-	}
+// Класс декоратор, который добавляет новую функциональность к уже сущесвующему классу FeeCalculator
+public class ExtraFeeCalculator extends FeeCalculatorDecorator {
 
-	@Override
-	public BigDecimal calculateFee(BigDecimal amount) {
-		BigDecimal originalFee = feeCalculator.calculateFee(amount);
-		return originalFee.multiply(BigDecimal.valueOf(2));
-	}
+    public ExtraFeeCalculator(FeeCalculator feeCalculator) {
+        super(feeCalculator);
+    }
+
+    @Override
+    public BigDecimal calculateFee(BigDecimal amount) {
+        BigDecimal originalFee = feeCalculator.calculateFee(amount);
+        return originalFee.add(BigDecimal.valueOf(20));
+    }
 
 }
