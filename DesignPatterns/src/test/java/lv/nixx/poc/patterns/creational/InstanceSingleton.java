@@ -1,6 +1,7 @@
 package lv.nixx.poc.patterns.creational;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +11,7 @@ class InstanceSingleton {
 	final Map<Integer, Person> persInstances = new HashMap<>();
 
 	@Test
-	public void instanceTest() {
+	void instanceTest() {
 		Map<String, Person> m = new HashMap<>();
 
 		m.put("key1", getPersonInstance(10, "n1", "s1", "iid1"));
